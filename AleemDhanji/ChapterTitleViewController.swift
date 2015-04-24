@@ -11,14 +11,22 @@ import UIKit
 class ChapterTitleViewController: UIViewController {
 
     // MARK - Variables
-
-    @IBOutlet weak var openQuote: UILabel?
-    @IBOutlet weak var closeQuote: UILabel?
+    let chapterTitle: Int = 0
+    @IBOutlet weak var openQuote: UILabel!
+    @IBOutlet weak var closeQuote: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let quoteColor = UIColor(rgba: "#282828")
+
+        openQuote.font = UIFont.fontAwesomeOfSize(115)
+        openQuote.text = String.fontAwesomeIconWithName(FontAwesome.QuoteLeft)
+        openQuote.textColor = quoteColor
+        closeQuote.font = UIFont.fontAwesomeOfSize(115)
+        closeQuote.text = String.fontAwesomeIconWithName(FontAwesome.QuoteRight)
+        closeQuote.textColor = quoteColor
+
     }
 
     override func didReceiveMemoryWarning() {
