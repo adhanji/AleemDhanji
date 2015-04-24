@@ -13,6 +13,7 @@
 		783388851AE9E49F0096720D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783388841AE9E49F0096720D /* Images.xcassets */; };
 		783388881AE9E49F0096720D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783388861AE9E49F0096720D /* LaunchScreen.xib */; };
 		783388941AE9E49F0096720D /* AleemDhanjiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783388931AE9E49F0096720D /* AleemDhanjiTests.swift */; };
+		78D68F961AE9F26300F5CDDB /* ChapterTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7833888D1AE9E49F0096720D /* AleemDhanjiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AleemDhanjiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		783388921AE9E49F0096720D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783388931AE9E49F0096720D /* AleemDhanjiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleemDhanjiTests.swift; sourceTree = "<group>"; };
+		78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				7833887D1AE9E49F0096720D /* AppDelegate.swift */,
 				7833887F1AE9E49F0096720D /* ViewController.swift */,
+				78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */,
 				783388811AE9E49F0096720D /* Main.storyboard */,
 				783388841AE9E49F0096720D /* Images.xcassets */,
 				783388861AE9E49F0096720D /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				783388801AE9E49F0096720D /* ViewController.swift in Sources */,
+				78D68F961AE9F26300F5CDDB /* ChapterTitleViewController.swift in Sources */,
 				7833887E1AE9E49F0096720D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +418,7 @@
 				783388991AE9E49F0096720D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7833889A1AE9E49F0096720D /* Build configuration list for PBXNativeTarget "AleemDhanjiTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				7833889C1AE9E49F0096720D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
