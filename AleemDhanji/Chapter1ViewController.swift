@@ -21,13 +21,39 @@ class Chapter1ViewController: UIViewController {
     @IBOutlet weak var shines: UIImageView!
     @IBOutlet weak var brackets: UILabel!
 
+    var initialHiddenGroup = [UIView]()
+    var transitionGroup1 = [UIView]()
+    var transitionGroup2 = [UIView]()
+
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        initialHiddenGroup = [buildings, buildingsOutline, laptop, slider, slideButton, destinationPlaceholder, shines, brackets]
+        transitionGroup1 = [buildings, buildingsOutline]
+        transitionGroup2 = [laptop, slider, slideButton, destinationPlaceholder]
+
+        // Allow tint color to be changed in Interface Builder
         buildings.image = buildings.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         laptop.image = laptop.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+
+        for item in initialHiddenGroup {
+            item.alpha = 0
+        }
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            for item in self.transitionGroup1 {
+                item.alpha = 1
+            }
+        }, completion: nil)
+        UIView.animateWithDuration(1, delay: 3, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
+            for item in self.transitionGroup2 {
+                item.alpha = 1
+            }
+        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
