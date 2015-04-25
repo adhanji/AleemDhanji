@@ -14,6 +14,7 @@
 		783388881AE9E49F0096720D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783388861AE9E49F0096720D /* LaunchScreen.xib */; };
 		783388941AE9E49F0096720D /* AleemDhanjiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783388931AE9E49F0096720D /* AleemDhanjiTests.swift */; };
 		78CFAC431AEBF87B000CDDAD /* Chapter1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */; };
+		78CFAC451AEC25E6000CDDAD /* Chapter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */; };
 		78D68F961AE9F26300F5CDDB /* ChapterTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */; };
 		78D68F9C1AE9F6A200F5CDDB /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D68F9B1AE9F6A200F5CDDB /* FontAwesome.swift */; };
 		78D68F9E1AE9F85700F5CDDB /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78D68F9D1AE9F6AE00F5CDDB /* FontAwesome.otf */; };
@@ -42,6 +43,7 @@
 		783388921AE9E49F0096720D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783388931AE9E49F0096720D /* AleemDhanjiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleemDhanjiTests.swift; sourceTree = "<group>"; };
 		78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter1ViewController.swift; sourceTree = "<group>"; };
+		78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter2ViewController.swift; sourceTree = "<group>"; };
 		78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleViewController.swift; sourceTree = "<group>"; };
 		78D68F9B1AE9F6A200F5CDDB /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = "../../../Downloads/FontAwesome-2.swift-master/Classes/FontAwesome.swift"; sourceTree = "<group>"; };
 		78D68F9D1AE9F6AE00F5CDDB /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = "../../../Downloads/FontAwesome-2.swift-master/Resources/FontAwesome.otf"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				7833887D1AE9E49F0096720D /* AppDelegate.swift */,
 				7833887F1AE9E49F0096720D /* ViewController.swift */,
+				78BFC45B1AEC260A00ADEFF5 /* Chapters */,
 				78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */,
 				783388811AE9E49F0096720D /* Main.storyboard */,
 				783388841AE9E49F0096720D /* Images.xcassets */,
@@ -97,7 +100,6 @@
 				78D68F9B1AE9F6A200F5CDDB /* FontAwesome.swift */,
 				78D68F9D1AE9F6AE00F5CDDB /* FontAwesome.otf */,
 				7833887B1AE9E49F0096720D /* Supporting Files */,
-				78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */,
 			);
 			path = AleemDhanji;
 			sourceTree = "<group>";
@@ -125,6 +127,15 @@
 				783388921AE9E49F0096720D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78BFC45B1AEC260A00ADEFF5 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */,
+				78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */,
+			);
+			name = Chapters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78CFAC431AEBF87B000CDDAD /* Chapter1ViewController.swift in Sources */,
+				78CFAC451AEC25E6000CDDAD /* Chapter2ViewController.swift in Sources */,
 				78D68F9C1AE9F6A200F5CDDB /* FontAwesome.swift in Sources */,
 				783388801AE9E49F0096720D /* ViewController.swift in Sources */,
 				78D68FA01AE9FB2D00F5CDDB /* UIColorExtension.swift in Sources */,

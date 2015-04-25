@@ -49,7 +49,7 @@ class Chapter1ViewController: UIViewController {
                 item.alpha = 1
             }
         }, completion: nil)
-        UIView.animateWithDuration(1, delay: 3, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
+        UIView.animateWithDuration(1, delay: 3, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             for item in self.transitionGroup2 {
                 item.alpha = 1
             }
