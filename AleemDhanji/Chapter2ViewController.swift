@@ -16,12 +16,28 @@ class Chapter2ViewController: UIViewController {
     @IBOutlet weak var hotAirBaloon: UIImageView!
     @IBOutlet weak var callToAction: UIImageView!
 
+    // MARK: - Variables
+    var initialHiddenGroup: [UIView] = []
+
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initialHiddenGroup = [grass, hotAirBaloon, callToAction]
+
+        for item in initialHiddenGroup {
+            item.alpha = 0
+        }
+
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.grass.alpha = 1
+            self.hotAirBaloon.alpha = 1
+            self.callToAction.alpha = 1
+        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

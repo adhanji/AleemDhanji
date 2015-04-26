@@ -13,10 +13,13 @@ class Chapter3ViewController: UIViewController {
 
     // MARK: - IBOutlets
 
+    @IBOutlet weak var iphoneSimulator: UIImageView!
     @IBOutlet weak var crystalBallBackground: UIImageView!
     @IBOutlet weak var predictionLabel: UILabel!
 
     // MARK: - Variables
+
+    var initialHiddenGroup: [UIView] = []
 
     let crystalBall: CrystalBall = CrystalBall()
     let animationImages: [UIImage] = [
@@ -91,9 +94,26 @@ class Chapter3ViewController: UIViewController {
 
         AudioServicesCreateSystemSoundID(soundURL, &mySound)
 
+        initialHiddenGroup = [iphoneSimulator, crystalBallBackground, predictionLabel]
+
         crystalBallBackground.animationImages = animationImages
         crystalBallBackground.animationDuration = 2.5
         crystalBallBackground.animationRepeatCount = 1
+
+        for item in initialHiddenGroup {
+            item.alpha = 0
+        }
+
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.iphoneSimulator.alpha = 1
+        }, completion: nil)
+        UIView.animateWithDuration(1, delay: 3, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.crystalBallBackground.alpha = 1
+            self.predictionLabel.alpha = 1
+        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

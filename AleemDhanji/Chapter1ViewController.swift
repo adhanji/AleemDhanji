@@ -21,9 +21,9 @@ class Chapter1ViewController: UIViewController {
     @IBOutlet weak var shines: UIImageView!
     @IBOutlet weak var brackets: UILabel!
 
-    var initialHiddenGroup = [UIView]()
-    var transitionGroup1 = [UIView]()
-    var transitionGroup2 = [UIView]()
+    var initialHiddenGroup: [UIView] = []
+    var transitionGroup1: [UIView] = []
+    var transitionGroup2: [UIView] = []
 
     // MARK: - View Lifecycle
 

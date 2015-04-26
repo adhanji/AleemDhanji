@@ -10,26 +10,45 @@ import UIKit
 
 class Chapter5ViewController: UIViewController {
 
+    // MARK: - IBOutlets
+
+    @IBOutlet weak var stars: UIImageView!
+    @IBOutlet weak var buildings: UIImageView!
+    @IBOutlet weak var hotAirBaloon: UIImageView!
+
+    // MARK: - Variables
+
+    var initialHiddenGroup: [UIImageView] = []
+
+    // MARK: - View Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        initialHiddenGroup = [stars, buildings, hotAirBaloon]
+
+        for item in initialHiddenGroup {
+            item.alpha = 0
+        }
+
+        buildings.image = buildings.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+
         // Do any additional setup after loading the view.
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.stars.alpha = 1
+        }, completion: nil)
+        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.buildings.alpha = 1
+            self.hotAirBaloon.alpha = 1
+        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
