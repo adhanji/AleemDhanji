@@ -37,7 +37,7 @@ class Chapter5ViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(1.5, delay: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.stars.alpha = 1
         }, completion: nil)
         UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in

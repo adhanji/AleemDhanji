@@ -107,10 +107,10 @@ class Chapter3ViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.iphoneSimulator.alpha = 1
         }, completion: nil)
-        UIView.animateWithDuration(1, delay: 3, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.crystalBallBackground.alpha = 1
             self.predictionLabel.alpha = 1
         }, completion: nil)

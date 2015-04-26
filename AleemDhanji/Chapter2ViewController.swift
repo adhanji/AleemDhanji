@@ -45,7 +45,7 @@ class Chapter2ViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.grass.alpha = 1
             self.hotAirBaloon.alpha = 1
             self.callToAction.alpha = 1

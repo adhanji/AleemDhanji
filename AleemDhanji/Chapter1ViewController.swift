@@ -67,13 +67,13 @@ class Chapter1ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         // Fade in Group1
-        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             for item in self.transitionGroup1 {
                 item.alpha = 1
             }
         }, completion: nil)
         // Then fade in Group2
-        UIView.animateWithDuration(0.75, delay: 2, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+        UIView.animateWithDuration(0.75, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             for item in self.transitionGroup2 {
                 item.alpha = 1
             }
