@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="I1T-ge-LBW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="TNI-Al-ppt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -57,8 +57,9 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5O-tK-xAa" userLabel="Shimmering View" customClass="FBShimmeringView">
                                 <rect key="frame" x="415" y="622" width="194" height="28"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T A P   T O   S T A R T" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCH-J4-vrM">
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T A P   T O   S T A R T" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCH-J4-vrM">
                                         <rect key="frame" x="5" y="0.0" width="183" height="28"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -68,6 +69,9 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hSU-Qx-CfE" appends="YES" id="OyT-Sk-WvV"/>
+                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -76,6 +80,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAf-aw-gWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hSU-Qx-CfE">
+                    <connections>
+                        <segue destination="Pan-5y-jtO" kind="modal" id="1UG-Xj-d13"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1468" y="752"/>
         </scene>
@@ -122,12 +131,38 @@
                             <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-right" translatesAutoresizingMaskIntoConstraints="NO" id="hem-Ok-fFE">
                                 <rect key="frame" x="756" y="507" width="111" height="94"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pkB-LD-2tD" userLabel="Shimmering View" customClass="FBShimmeringView">
+                                <rect key="frame" x="730" y="697" width="256" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T A P   T O   C O N T I N U E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4F-ag-SZF">
+                                        <rect key="frame" x="5" y="0.0" width="246" height="28"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yAm-Xm-OQU" appends="YES" id="Tfq-pe-jpN"/>
+                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="continueLabel" destination="B4F-ag-SZF" id="C1H-60-gce"/>
+                        <outlet property="shimmeringView" destination="pkB-LD-2tD" id="BJY-ED-P35"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3X-k5-oyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yAm-Xm-OQU">
+                    <connections>
+                        <segue destination="VeM-of-quo" kind="modal" id="Brw-2Y-jbC"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2591" y="752"/>
         </scene>
@@ -172,10 +207,27 @@
                                 <rect key="frame" x="0.0" y="270" width="260" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D56-bb-suK" userLabel="Shimmering View" customClass="FBShimmeringView">
+                                <rect key="frame" x="744" y="715" width="256" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T A P   T O   C O N T I N U E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0g-KB-cYm">
+                                        <rect key="frame" x="5" y="0.0" width="246" height="28"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.27058823529411763" green="0.85882352941176465" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="continueLabel" destination="s0g-KB-cYm" id="Uld-eo-d4t"/>
+                        <outlet property="shimmeringView" destination="D56-bb-suK" id="bug-C8-Ufk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXA-MA-xzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,9 +372,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slider" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-Yv-7QP">
-                                <rect key="frame" x="146" y="494" width="729" height="126"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ymd-9e-YWv" customClass="FBShimmeringView">
+                                <rect key="frame" x="129" y="470" width="760" height="170"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slider" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-Yv-7QP">
+                                        <rect key="frame" x="15" y="23" width="729" height="126"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="destination-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="02O-Yj-MxC">
                                 <rect key="frame" x="756" y="503" width="108" height="108"/>
                             </imageView>
@@ -332,22 +390,47 @@
                                     <action selector="didReachDestination" destination="VeM-of-quo" eventType="valueChanged" id="QqL-yb-XDD"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7U-2Z-iMQ" userLabel="Shimmering View" customClass="FBShimmeringView">
+                                <rect key="frame" x="40" y="707" width="256" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T A P   T O   C O N T I N U E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn9-xL-tYo">
+                                        <rect key="frame" x="5" y="0.0" width="246" height="28"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yPv-p3-zaa" appends="YES" id="6WW-Vg-SO2"/>
+                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="brackets" destination="0Xb-YB-36Y" id="E4Q-hM-eIi"/>
                         <outlet property="buildings" destination="FjU-Hj-T0y" id="UEu-ly-oHb"/>
                         <outlet property="buildingsOutline" destination="pGE-eI-ysy" id="zbx-O6-wWv"/>
+                        <outlet property="continueLabel" destination="zn9-xL-tYo" id="zzD-ll-kmA"/>
+                        <outlet property="continueShimmeringView" destination="i7U-2Z-iMQ" id="ZEj-9b-nVw"/>
                         <outlet property="destinationPlaceholder" destination="02O-Yj-MxC" id="6T4-dE-PNM"/>
                         <outlet property="laptop" destination="d9L-ia-tU9" id="bRM-tK-8yN"/>
+                        <outlet property="shimmeringView" destination="Ymd-9e-YWv" id="Xh0-Ed-94f"/>
                         <outlet property="shines" destination="OTO-r2-twk" id="JXJ-cs-Gzb"/>
                         <outlet property="slider" destination="K9G-aN-n6G" id="ICD-5m-wNu"/>
                         <outlet property="sliderTrack" destination="OgI-Yv-7QP" id="5AR-nh-mAQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEZ-5d-qKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yPv-p3-zaa">
+                    <connections>
+                        <segue destination="JAz-Tj-JuP" kind="modal" id="TVX-vc-9QV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3751" y="752"/>
         </scene>

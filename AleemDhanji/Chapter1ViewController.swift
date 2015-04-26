@@ -20,6 +20,9 @@ class Chapter1ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var shines: UIImageView!
     @IBOutlet weak var brackets: UILabel!
+    @IBOutlet weak var continueLabel: UILabel!
+    @IBOutlet weak var continueShimmeringView: FBShimmeringView!
+    @IBOutlet weak var shimmeringView: FBShimmeringView!
 
     // MARK: - Variables
 
@@ -35,10 +38,8 @@ class Chapter1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-
         // Hide these first
-        initialHiddenGroup = [buildings, buildingsOutline, laptop, sliderTrack, slider, destinationPlaceholder, shines, brackets]
+        initialHiddenGroup = [buildings, buildingsOutline, laptop, sliderTrack, slider, destinationPlaceholder, shines, brackets, continueLabel]
         // First fade in these
         transitionGroup1 = [buildings, buildingsOutline]
         // Then fade in these
@@ -78,6 +79,9 @@ class Chapter1ViewController: UIViewController {
                 item.alpha = 1
             }
         }, completion: nil)
+
+        shimmeringView.contentView = sliderTrack
+        shimmeringView.shimmering = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -102,6 +106,11 @@ class Chapter1ViewController: UIViewController {
                 }
             }, completion: nil)
         }
+        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.continueShimmeringView.contentView = self.continueLabel
+            self.continueShimmeringView.shimmering = true
+            self.continueLabel.alpha = 1
+        }, completion: nil)
     }
 
 

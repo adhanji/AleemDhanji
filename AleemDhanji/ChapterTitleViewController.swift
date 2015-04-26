@@ -10,27 +10,28 @@ import UIKit
 
 class ChapterTitleViewController: UIViewController {
 
-    // MARK - Variables
-    let chapterTitle: Int = 3
+    // MARK - IBOutlets
+
+    @IBOutlet weak var continueLabel: UILabel!
+    @IBOutlet weak var shimmeringView: FBShimmeringView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        shimmeringView.contentView = continueLabel
+        shimmeringView.shimmering = true
+        continueLabel.alpha = 0
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.continueLabel.alpha = 1
+        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
