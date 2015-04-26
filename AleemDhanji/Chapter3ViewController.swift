@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class Chapter3ViewController: UIViewController {
 
@@ -80,11 +81,15 @@ class Chapter3ViewController: UIViewController {
         UIImage(named: "CB00059")!,
         UIImage(named: "CB00060")!
     ]
+    let soundURL = NSBundle.mainBundle().URLForResource("crystal_ball", withExtension: "mp3")
+    var mySound: SystemSoundID = 0
 
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        AudioServicesCreateSystemSoundID(soundURL, &mySound)
 
         crystalBallBackground.animationImages = animationImages
         crystalBallBackground.animationDuration = 2.5
@@ -111,11 +116,12 @@ class Chapter3ViewController: UIViewController {
 
     // MARK: - Touch Events
 
-    
+
 
     // MARK: - Helper Methods
 
     func makeprediction() {
+        AudioServicesPlaySystemSound(mySound)
         crystalBallBackground.startAnimating()
         predictionLabel.text = crystalBall.randomPrediction()
 
