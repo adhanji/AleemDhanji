@@ -18,13 +18,14 @@ class Chapter2ViewController: UIViewController {
     @IBOutlet weak var html: UIView!
     @IBOutlet weak var css: UIView!
     @IBOutlet weak var javascript: UIView!
-    @IBOutlet weak var c: UIView!
+    @IBOutlet weak var objectiveC: UIView!
     @IBOutlet weak var cPlusPlus: UIView!
 
     // MARK: - Variables
     var swipes = 0
     var initialHiddenGroup: [UIView] = []
-    var skills: [UIView] = []
+    var skillGroup1: [UIView] = []
+    var skillGroup2: [UIView] = []
 
     // MARK: - View Lifecycle
 
@@ -35,8 +36,9 @@ class Chapter2ViewController: UIViewController {
         swipeUp.direction = UISwipeGestureRecognizerDirection.Up
         hotAirBaloon.addGestureRecognizer(swipeUp)
 
-        skills = [html, css, javascript, c, cPlusPlus]
-        initialHiddenGroup = [grass, hotAirBaloon, callToAction] + skills
+        skillGroup1 = [html, css, javascript]
+        skillGroup2 = [cPlusPlus, objectiveC]
+        initialHiddenGroup = [grass, hotAirBaloon, callToAction] + skillGroup1 + skillGroup2
 
         for item in initialHiddenGroup {
             item.alpha = 0
@@ -61,13 +63,26 @@ class Chapter2ViewController: UIViewController {
 
     func liftBaloon() {
         if swipes < 2 {
+            // Move hot air baloon and call to action up the screen
             UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
                 let indicatorPosition = (self.callToAction.frame.origin.x, self.callToAction.frame.origin.y)
                 let baloonPosition = (self.hotAirBaloon.frame.origin.x, self.hotAirBaloon.frame.origin.y)
                 self.hotAirBaloon.frame.origin = CGPointMake(baloonPosition.0, baloonPosition.1 - 100)
                 self.callToAction.frame.origin = CGPointMake(indicatorPosition.0, indicatorPosition.1 - 100)
-                self.swipes++
+                }, completion: nil)
+            // Show skill sets once gesture registered
+            UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                for item in self.swipes == 0 ? self.skillGroup1 : self.skillGroup2 {
+                    item.alpha = 1
+                }
             }, completion: nil)
+            // Hide skill sets after set delay
+//            UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//                for item in self.swipes == 0 ? self.skillGroup1 : self.skillGroup2 {
+//                    item.alpha = 0
+//                }
+//            }, completion: nil)
+            ++self.swipes
         }
 
     }
