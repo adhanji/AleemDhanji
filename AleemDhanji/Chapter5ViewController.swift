@@ -15,17 +15,19 @@ class Chapter5ViewController: UIViewController {
     @IBOutlet weak var stars: UIImageView!
     @IBOutlet weak var buildings: UIImageView!
     @IBOutlet weak var hotAirBaloon: UIImageView!
+    @IBOutlet weak var continueLabel: UILabel!
+    @IBOutlet weak var shimmeringView: FBShimmeringView!
 
     // MARK: - Variables
 
-    var initialHiddenGroup: [UIImageView] = []
+    var initialHiddenGroup: [UIView] = []
 
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initialHiddenGroup = [stars, buildings, hotAirBaloon]
+        initialHiddenGroup = [stars, buildings, hotAirBaloon, continueLabel]
 
         for item in initialHiddenGroup {
             item.alpha = 0
@@ -43,6 +45,12 @@ class Chapter5ViewController: UIViewController {
         UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.buildings.alpha = 1
             self.hotAirBaloon.alpha = 1
+        }, completion: nil)
+
+        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.shimmeringView.contentView = self.continueLabel
+            self.shimmeringView.shimmering = true
+            self.continueLabel.alpha = 1
         }, completion: nil)
     }
 

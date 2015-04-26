@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7833887E1AE9E49F0096720D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833887D1AE9E49F0096720D /* AppDelegate.swift */; };
-		783388801AE9E49F0096720D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833887F1AE9E49F0096720D /* ViewController.swift */; };
 		783388831AE9E49F0096720D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783388811AE9E49F0096720D /* Main.storyboard */; };
 		783388851AE9E49F0096720D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783388841AE9E49F0096720D /* Images.xcassets */; };
 		783388881AE9E49F0096720D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783388861AE9E49F0096720D /* LaunchScreen.xib */; };
@@ -19,6 +18,7 @@
 		78BFC4681AEC62C000ADEFF5 /* Chapter4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC4671AEC62C000ADEFF5 /* Chapter4ViewController.swift */; };
 		78BFC46A1AEC81AD00ADEFF5 /* Chapter5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC4691AEC81AD00ADEFF5 /* Chapter5ViewController.swift */; };
 		78BFC46F1AED818300ADEFF5 /* MainTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC46E1AED818300ADEFF5 /* MainTitleViewController.swift */; };
+		78BFC4711AEDA21600ADEFF5 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC4701AEDA21600ADEFF5 /* SummaryViewController.swift */; };
 		78CFAC431AEBF87B000CDDAD /* Chapter1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */; };
 		78CFAC451AEC25E6000CDDAD /* Chapter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */; };
 		78D68F961AE9F26300F5CDDB /* ChapterTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */; };
@@ -40,7 +40,6 @@
 		783388781AE9E49F0096720D /* AleemDhanji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AleemDhanji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7833887C1AE9E49F0096720D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7833887D1AE9E49F0096720D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7833887F1AE9E49F0096720D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		783388821AE9E49F0096720D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		783388841AE9E49F0096720D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		783388871AE9E49F0096720D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		78BFC4691AEC81AD00ADEFF5 /* Chapter5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter5ViewController.swift; sourceTree = "<group>"; };
 		78BFC46B1AED7D6500ADEFF5 /* AleemDhanji-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AleemDhanji-Bridging-Header.h"; sourceTree = "<group>"; };
 		78BFC46E1AED818300ADEFF5 /* MainTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTitleViewController.swift; sourceTree = "<group>"; };
+		78BFC4701AEDA21600ADEFF5 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter1ViewController.swift; sourceTree = "<group>"; };
 		78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter2ViewController.swift; sourceTree = "<group>"; };
 		78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleViewController.swift; sourceTree = "<group>"; };
@@ -121,9 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				7833887D1AE9E49F0096720D /* AppDelegate.swift */,
-				7833887F1AE9E49F0096720D /* ViewController.swift */,
-				78BFC45B1AEC260A00ADEFF5 /* Chapters */,
 				78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */,
+				78BFC45B1AEC260A00ADEFF5 /* Chapters */,
 				783388811AE9E49F0096720D /* Main.storyboard */,
 				783388841AE9E49F0096720D /* Images.xcassets */,
 				783388861AE9E49F0096720D /* LaunchScreen.xib */,
@@ -168,6 +167,7 @@
 				78BFC45C1AEC2E2000ADEFF5 /* Chapter3ViewController.swift */,
 				78BFC4671AEC62C000ADEFF5 /* Chapter4ViewController.swift */,
 				78BFC4691AEC81AD00ADEFF5 /* Chapter5ViewController.swift */,
+				78BFC4701AEDA21600ADEFF5 /* SummaryViewController.swift */,
 			);
 			name = Chapters;
 			sourceTree = "<group>";
@@ -322,8 +322,8 @@
 				78BFC4681AEC62C000ADEFF5 /* Chapter4ViewController.swift in Sources */,
 				78CFAC431AEBF87B000CDDAD /* Chapter1ViewController.swift in Sources */,
 				78CFAC451AEC25E6000CDDAD /* Chapter2ViewController.swift in Sources */,
+				78BFC4711AEDA21600ADEFF5 /* SummaryViewController.swift in Sources */,
 				78BFC46F1AED818300ADEFF5 /* MainTitleViewController.swift in Sources */,
-				783388801AE9E49F0096720D /* ViewController.swift in Sources */,
 				78BFC46A1AEC81AD00ADEFF5 /* Chapter5ViewController.swift in Sources */,
 				78BFC45F1AEC313F00ADEFF5 /* CrystalBall.swift in Sources */,
 				78D68F961AE9F26300F5CDDB /* ChapterTitleViewController.swift in Sources */,

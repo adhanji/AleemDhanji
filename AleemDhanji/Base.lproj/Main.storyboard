@@ -1,35 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="WYh-gu-ZNW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="HpF-yI-FTu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-792" y="760"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="WjZ-FS-P8w">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="5a4-0S-e7K" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LEo-4H-fu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="54" y="760"/>
-        </scene>
         <!--Main Title View Controller-->
         <scene sceneID="zLc-A2-Xnz">
             <objects>
@@ -894,12 +868,37 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dashed-line" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-CM-F61">
                                 <rect key="frame" x="370" y="270" width="652" height="3"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsg-ma-107" userLabel="Shimmering View" customClass="FBShimmeringView">
+                                <rect key="frame" x="734" y="714" width="256" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T A P   T O   C O N T I N U E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twc-vq-shG">
+                                        <rect key="frame" x="5" y="0.0" width="246" height="28"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cHF-uS-sR9" appends="YES" id="kia-dH-KHl"/>
+                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="continueLabel" destination="twc-vq-shG" id="CXt-O1-UkL"/>
+                        <outlet property="shimmeringView" destination="xsg-ma-107" id="gcT-bf-LYn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZT-qg-6WP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cHF-uS-sR9">
+                    <connections>
+                        <segue destination="EC2-kj-5S3" kind="modal" id="5Wd-Sp-oh7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="12986" y="752"/>
         </scene>
@@ -929,30 +928,53 @@
                                 <rect key="frame" x="615" y="400" width="125" height="203"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-G4-Ztl">
-                                <rect key="frame" x="150" y="45" width="721" height="154"/>
-                                <string key="text">Switching careers from business to computer science. Building my first iOS app. Landing my first software engineering job. Leading development of Chalk.com’s first native iOS app. All in the span of just one year. It’s been quite the journey so far, and while I don’t know what my next chapter will be, I have never been more excited to find out.</string>
+                                <rect key="frame" x="150" y="45" width="704" height="154"/>
+                                <string key="text">Switching careers from business to computer science. Building my first iOS app. My first software engineering job. Leading development of Chalk.com’s first native iOS app. All in the span of just one year. It’s been quite the journey so far, and while I don’t know what my next chapter will be, I have never been more excited to find out.</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="856-xY-Hu8" userLabel="Shimmering View" customClass="FBShimmeringView">
+                                <rect key="frame" x="742" y="720" width="256" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T A P   T O   C O N T I N U E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8T-Ui-0EN">
+                                        <rect key="frame" x="5" y="0.0" width="246" height="28"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Qf6-dt-zpL" appends="YES" id="5YG-GW-cey"/>
+                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="buildings" destination="Rh3-cR-np2" id="j9H-fO-V8V"/>
+                        <outlet property="continueLabel" destination="p8T-Ui-0EN" id="JYz-SD-cqb"/>
                         <outlet property="hotAirBaloon" destination="Mbp-ap-TkG" id="kmb-zo-ZCF"/>
+                        <outlet property="shimmeringView" destination="856-xY-Hu8" id="GtJ-zZ-wHI"/>
                         <outlet property="stars" destination="hjN-3n-dct" id="F0k-TR-GUX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dM-M5-B5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Qf6-dt-zpL">
+                    <connections>
+                        <segue destination="I1T-ge-LBW" kind="modal" id="Ngx-TT-U0R"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="14096" y="752"/>
         </scene>
-        <!--View Controller-->
+        <!--Summary View Controller-->
         <scene sceneID="HpP-qx-C2G">
             <objects>
-                <viewController storyboardIdentifier="SummaryPage" id="I1T-ge-LBW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SummaryPage" id="I1T-ge-LBW" userLabel="Summary View Controller" customClass="SummaryViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s88-h8-nvs"/>
                         <viewControllerLayoutGuide type="bottom" id="ByQ-hJ-VNH"/>
@@ -1045,12 +1067,37 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Usf-mt-l9V" userLabel="Shimmering View" customClass="FBShimmeringView">
+                                <rect key="frame" x="34" y="712" width="256" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T A P   T O   R E S T A R T" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoZ-nD-2h3">
+                                        <rect key="frame" x="5" y="0.0" width="246" height="28"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Xmi-ib-rnz" appends="YES" id="1Xe-wg-Qsv"/>
+                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="continueLabel" destination="aoZ-nD-2h3" id="g7Z-Rx-reb"/>
+                        <outlet property="shimmeringView" destination="Usf-mt-l9V" id="EDe-X4-N04"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XoB-8q-oaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Xmi-ib-rnz">
+                    <connections>
+                        <segue destination="TNI-Al-ppt" kind="modal" id="8wf-Fa-mbD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="15194" y="752"/>
         </scene>
