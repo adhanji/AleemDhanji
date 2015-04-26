@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Cnm-2w-8Wg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="0L4-sT-39C">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -299,10 +299,10 @@
             </objects>
             <point key="canvasLocation" x="3751" y="752"/>
         </scene>
-        <!--Chapter 2 Title View Controller-->
+        <!--Chapter 2 Main View Controller-->
         <scene sceneID="qqr-O8-VtF">
             <objects>
-                <viewController storyboardIdentifier="Chapter2Main" id="av7-0m-xAZ" userLabel="Chapter 2 Title View Controller" customClass="Chapter2ViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Chapter2Main" id="av7-0m-xAZ" userLabel="Chapter 2 Main View Controller" customClass="Chapter2ViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ahx-h6-BvI"/>
                         <viewControllerLayoutGuide type="bottom" id="7VB-1K-fct"/>
@@ -392,6 +392,7 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="callToAction" destination="7Wd-9Y-f6O" id="728-pu-iNq"/>
                         <outlet property="grass" destination="7ag-19-w8r" id="AbX-ph-k3Z"/>
                         <outlet property="hotAirBaloon" destination="ouu-5J-9cJ" id="b2G-Kn-N0j"/>
                     </connections>
@@ -400,10 +401,10 @@
             </objects>
             <point key="canvasLocation" x="5930" y="752"/>
         </scene>
-        <!--Chapter 2 Title View Controller-->
+        <!--Chapter 2 Main2 View Controller-->
         <scene sceneID="mJL-ge-2sm">
             <objects>
-                <viewController storyboardIdentifier="Chapter2Main2" id="CZk-af-ljy" userLabel="Chapter 2 Title View Controller" customClass="Chapter2ViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Chapter2Main2" id="CZk-af-ljy" userLabel="Chapter 2 Main2 View Controller" customClass="Chapter2ViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WXa-YQ-vkn"/>
                         <viewControllerLayoutGuide type="bottom" id="0qf-0I-vrB"/>
@@ -545,15 +546,60 @@
             </objects>
             <point key="canvasLocation" x="9568" y="752"/>
         </scene>
+        <!--Chapter 4 Main View Controller-->
+        <scene sceneID="x7a-vS-ElD">
+            <objects>
+                <viewController storyboardIdentifier="Chapter4Main" id="0L4-sT-39C" userLabel="Chapter 4 Main View Controller" customClass="Chapter4ViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lg7-GL-vXF"/>
+                        <viewControllerLayoutGuide type="bottom" id="DDT-IC-6RO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ep3-Je-V5s">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="vn9-Ko-IwK">
+                                <rect key="frame" x="606" y="412" width="292" height="251"/>
+                                <color key="tintColor" red="0.76862745098039209" green="0.34509803921568627" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tap_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gXc-ZS-rJ4">
+                                <rect key="frame" x="732" y="498" width="50" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dashed-ring" translatesAutoresizingMaskIntoConstraints="NO" id="umm-Ie-ADx">
+                                <rect key="frame" x="702" y="476" width="111" height="110"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWr-gW-AfG">
+                                <rect key="frame" x="66" y="119" width="420" height="383"/>
+                                <string key="text">This blurb will explain Aleem’s experience working at Chalk.com and how his passion for helping teachers helped motivate him to learn and overcome the challenge of building an iPad app all on his own.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.45098039220000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="callToAction" destination="gXc-ZS-rJ4" id="YBa-l0-RQO"/>
+                        <outlet property="heart" destination="vn9-Ko-IwK" id="VXu-iK-4B9"/>
+                        <outlet property="ring" destination="umm-Ie-ADx" id="wah-5X-GHu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZ8-nA-AlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11790" y="752"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CB00001" width="320" height="568"/>
         <image name="buildings_ch1" width="405" height="597"/>
+        <image name="dashed-ring" width="111" height="110"/>
         <image name="destination-placeholder" width="108" height="108"/>
         <image name="expand-CTA" width="64" height="90"/>
         <image name="fa-quote-left" width="111" height="94"/>
         <image name="fa-quote-right" width="111" height="94"/>
         <image name="grass" width="280" height="15"/>
+        <image name="heart" width="292" height="251"/>
         <image name="hot-air-balloon" width="226" height="349"/>
         <image name="iPhone-5-White" width="217" height="454"/>
         <image name="laptop-dark-grey" width="536" height="372"/>
@@ -562,6 +608,7 @@
         <image name="shines" width="529" height="358"/>
         <image name="slide-button" width="108" height="108"/>
         <image name="slider" width="729" height="126"/>
+        <image name="tap_icon" width="50" height="65"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

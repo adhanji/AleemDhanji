@@ -1,5 +1,5 @@
 //
-//  Chapter2ViewController.swift
+//  Chapter4ViewController.swift
 //  AleemDhanji
 //
 //  Created by Aleem Dhanji on 2015-04-25.
@@ -8,20 +8,18 @@
 
 import UIKit
 
-class Chapter2ViewController: UIViewController {
+class Chapter4ViewController: UIViewController {
 
     // MARK: - IBOutlets
 
-    @IBOutlet weak var grass: UIImageView!
-    @IBOutlet weak var hotAirBaloon: UIImageView!
+    @IBOutlet weak var heart: UIImageView!
     @IBOutlet weak var callToAction: UIImageView!
-
-    // MARK: - View Lifecycle
+    @IBOutlet weak var ring: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        heart.image = heart.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
     }
 
     override func didReceiveMemoryWarning() {
