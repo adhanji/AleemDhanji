@@ -12,14 +12,14 @@ class Chapter4ViewController: UIViewController {
 
     // MARK: - IBOutlets
 
-    @IBOutlet weak var heart: UIImageView!
-    @IBOutlet weak var callToAction: UIImageView!
-    @IBOutlet weak var ring: UIImageView!
+//    @IBOutlet weak var heart: UIImageView!
+//    @IBOutlet weak var callToAction: UIImageView!
+//    @IBOutlet weak var ring: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        heart.image = heart.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+//        heart.image = heart.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
     }
 
     override func didReceiveMemoryWarning() {

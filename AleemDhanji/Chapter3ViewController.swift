@@ -16,11 +16,14 @@ class Chapter3ViewController: UIViewController {
     @IBOutlet weak var iphoneSimulator: UIImageView!
     @IBOutlet weak var crystalBallBackground: UIImageView!
     @IBOutlet weak var predictionLabel: UILabel!
+    @IBOutlet weak var continueLabel: UILabel!
+    @IBOutlet weak var shimmeringView: FBShimmeringView!
 
     // MARK: - Variables
 
     var initialHiddenGroup: [UIView] = []
 
+    var continueDisplayed = false
     let crystalBall: CrystalBall = CrystalBall()
     let animationImages: [UIImage] = [
         UIImage(named: "CB00001")!,
@@ -94,7 +97,7 @@ class Chapter3ViewController: UIViewController {
 
         AudioServicesCreateSystemSoundID(soundURL, &mySound)
 
-        initialHiddenGroup = [iphoneSimulator, crystalBallBackground, predictionLabel]
+        initialHiddenGroup = [iphoneSimulator, crystalBallBackground, predictionLabel, continueLabel]
 
         crystalBallBackground.animationImages = animationImages
         crystalBallBackground.animationDuration = 2.5
@@ -131,12 +134,17 @@ class Chapter3ViewController: UIViewController {
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
         if motion == UIEventSubtype.MotionShake {
             makeprediction()
+            // Display tap to continue label if shake occured
+            if !continueDisplayed {
+                UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                    self.shimmeringView.contentView = self.continueLabel
+                    self.shimmeringView.shimmering = true
+                    self.continueLabel.alpha = 1
+                }, completion: nil)
+                continueDisplayed = true
+            }
         }
     }
-
-    // MARK: - Touch Events
-
-
 
     // MARK: - Helper Methods
 
