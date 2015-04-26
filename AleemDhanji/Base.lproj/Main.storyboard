@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="VeM-of-quo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Cnm-2w-8Wg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -256,8 +256,8 @@
                                 <color key="tintColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8e-Ko-2sa">
-                                <rect key="frame" x="198" y="67" width="628" height="148"/>
-                                <string key="text">Hi, my name is Aleem. Loren ipsum some stuff goes here about my background. This should contain a blurb about my decision to change career fields from business into computer science.</string>
+                                <rect key="frame" x="198" y="60" width="663" height="148"/>
+                                <string key="text">Hi, my name is Aleem. I am currently a 2nd year Computer Science student at the University of Waterloo. However, I wasn’t always a programmer, and until recently I had no idea what I wanted to do. This is my story, and it all started with my decision to switch from Business to Computer Science.</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -315,7 +315,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1l-4S-A8y">
-                                <rect key="frame" x="160" y="77" width="599" height="204"/>
+                                <rect key="frame" x="160" y="28" width="599" height="204"/>
                                 <string key="text">This is a blurb about first getting into computer programming. At first, it seemed like an overwhelming prospect but share about how breaking down the big goal into small steps helped  me to learn and grow.</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -566,8 +566,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2t-WI-ShI">
-                                <rect key="frame" x="41" y="28" width="485" height="384"/>
-                                <string key="text">This is what a blurb about the first iOS app that I ever created. It’s a simple predictor app. This blurb should explain how I learned to be confident in the work that I am doing. And be willing to share your work.</string>
+                                <rect key="frame" x="50" y="79" width="467" height="333"/>
+                                <string key="text">This is the first iOS app that I ever created. It’s a simple crystal ball app that “predicts” the future. I’ll never forget the satisfaction of creating something tangible that I could interact with on my phone. As simple as it was, this app helped to showcase my desire to learn iOS development, and would eventually help me land my first job as a software engineer at Chalk.com. Go ahead, give it a shake!</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -702,8 +702,8 @@
                                 <rect key="frame" x="615" y="400" width="125" height="203"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-G4-Ztl">
-                                <rect key="frame" x="150" y="45" width="602" height="155"/>
-                                <string key="text">This blurb will recap Aleem’s learning from his experiences up to so far. Key point here is that although he may not know what projects he will be working on next, he will be definitely enjoying the process.</string>
+                                <rect key="frame" x="150" y="45" width="721" height="154"/>
+                                <string key="text">Switching careers from business to computer science. Building my first iOS app. Landing my first job as a software engineer. Leading development of Chalk.com’s first native iOS app. All in the span of just one year. It’s been quite the journey so far, and while I don’t know what my next chapter will be, I have never been more excited to find out.</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
