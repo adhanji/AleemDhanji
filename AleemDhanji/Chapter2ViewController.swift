@@ -15,16 +15,28 @@ class Chapter2ViewController: UIViewController {
     @IBOutlet weak var grass: UIImageView!
     @IBOutlet weak var hotAirBaloon: UIImageView!
     @IBOutlet weak var callToAction: UIImageView!
+    @IBOutlet weak var html: UIView!
+    @IBOutlet weak var css: UIView!
+    @IBOutlet weak var javascript: UIView!
+    @IBOutlet weak var c: UIView!
+    @IBOutlet weak var cPlusPlus: UIView!
 
     // MARK: - Variables
+    var swipes = 0
     var initialHiddenGroup: [UIView] = []
+    var skills: [UIView] = []
 
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initialHiddenGroup = [grass, hotAirBaloon, callToAction]
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: "liftBaloon")
+        swipeUp.direction = UISwipeGestureRecognizerDirection.Up
+        hotAirBaloon.addGestureRecognizer(swipeUp)
+
+        skills = [html, css, javascript, c, cPlusPlus]
+        initialHiddenGroup = [grass, hotAirBaloon, callToAction] + skills
 
         for item in initialHiddenGroup {
             item.alpha = 0
@@ -33,7 +45,7 @@ class Chapter2ViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
             self.grass.alpha = 1
             self.hotAirBaloon.alpha = 1
             self.callToAction.alpha = 1
@@ -45,15 +57,19 @@ class Chapter2ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Swipe Gesture
 
-    /*
-    // MARK: - Navigation
+    func liftBaloon() {
+        if swipes < 2 {
+            UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
+                let indicatorPosition = (self.callToAction.frame.origin.x, self.callToAction.frame.origin.y)
+                let baloonPosition = (self.hotAirBaloon.frame.origin.x, self.hotAirBaloon.frame.origin.y)
+                self.hotAirBaloon.frame.origin = CGPointMake(baloonPosition.0, baloonPosition.1 - 100)
+                self.callToAction.frame.origin = CGPointMake(indicatorPosition.0, indicatorPosition.1 - 100)
+                self.swipes++
+            }, completion: nil)
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }

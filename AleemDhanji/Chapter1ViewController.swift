@@ -67,13 +67,13 @@ class Chapter1ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         // Fade in Group1
-        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
             for item in self.transitionGroup1 {
                 item.alpha = 1
             }
         }, completion: nil)
         // Then fade in Group2
-        UIView.animateWithDuration(0.75, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.75, delay: 2, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
             for item in self.transitionGroup2 {
                 item.alpha = 1
             }
@@ -90,13 +90,13 @@ class Chapter1ViewController: UIViewController {
     @IBAction func didReachDestination() {
         if slider.value == 1 {
             // Switch to green state
-            UIView.animateWithDuration(0, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
+            UIView.animateWithDuration(0, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
                 for item in self.showOnSlide {
                     item.alpha = 1
                 }
                 self.laptop.tintColor = UIColor(red: 69/255, green: 219/255, blue: 90/255, alpha: 1)
             }, completion: nil)
-            UIView.animateWithDuration(0, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
+            UIView.animateWithDuration(0, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
                 for item in self.hideOnSlide {
                     item.alpha = 0
                 }
