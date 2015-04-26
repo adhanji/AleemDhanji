@@ -17,6 +17,7 @@
 		78BFC45F1AEC313F00ADEFF5 /* CrystalBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC45E1AEC313F00ADEFF5 /* CrystalBall.swift */; };
 		78BFC4621AEC337E00ADEFF5 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78BFC4611AEC337E00ADEFF5 /* crystal_ball.mp3 */; };
 		78BFC4681AEC62C000ADEFF5 /* Chapter4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC4671AEC62C000ADEFF5 /* Chapter4ViewController.swift */; };
+		78BFC46A1AEC81AD00ADEFF5 /* Chapter5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC4691AEC81AD00ADEFF5 /* Chapter5ViewController.swift */; };
 		78CFAC431AEBF87B000CDDAD /* Chapter1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */; };
 		78CFAC451AEC25E6000CDDAD /* Chapter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */; };
 		78D68F961AE9F26300F5CDDB /* ChapterTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */; };
@@ -47,6 +48,7 @@
 		78BFC45E1AEC313F00ADEFF5 /* CrystalBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrystalBall.swift; sourceTree = "<group>"; };
 		78BFC4611AEC337E00ADEFF5 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
 		78BFC4671AEC62C000ADEFF5 /* Chapter4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter4ViewController.swift; sourceTree = "<group>"; };
+		78BFC4691AEC81AD00ADEFF5 /* Chapter5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter5ViewController.swift; sourceTree = "<group>"; };
 		78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter1ViewController.swift; sourceTree = "<group>"; };
 		78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter2ViewController.swift; sourceTree = "<group>"; };
 		78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */,
 				78BFC45C1AEC2E2000ADEFF5 /* Chapter3ViewController.swift */,
 				78BFC4671AEC62C000ADEFF5 /* Chapter4ViewController.swift */,
+				78BFC4691AEC81AD00ADEFF5 /* Chapter5ViewController.swift */,
 			);
 			name = Chapters;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				78CFAC431AEBF87B000CDDAD /* Chapter1ViewController.swift in Sources */,
 				78CFAC451AEC25E6000CDDAD /* Chapter2ViewController.swift in Sources */,
 				783388801AE9E49F0096720D /* ViewController.swift in Sources */,
+				78BFC46A1AEC81AD00ADEFF5 /* Chapter5ViewController.swift in Sources */,
 				78BFC45F1AEC313F00ADEFF5 /* CrystalBall.swift in Sources */,
 				78D68F961AE9F26300F5CDDB /* ChapterTitleViewController.swift in Sources */,
 				7833887E1AE9E49F0096720D /* AppDelegate.swift in Sources */,
