@@ -18,8 +18,9 @@ class Chapter2ViewController: UIViewController {
     @IBOutlet weak var html: UIView!
     @IBOutlet weak var css: UIView!
     @IBOutlet weak var javascript: UIView!
-    @IBOutlet weak var objectiveC: UIView!
+    @IBOutlet weak var python: UIView!
     @IBOutlet weak var cPlusPlus: UIView!
+    @IBOutlet weak var objectiveC: UIView!
 
     // MARK: - Variables
     var swipes = 0
@@ -37,7 +38,7 @@ class Chapter2ViewController: UIViewController {
         hotAirBaloon.addGestureRecognizer(swipeUp)
 
         skillGroup1 = [html, css, javascript]
-        skillGroup2 = [cPlusPlus, objectiveC]
+        skillGroup2 = [python, cPlusPlus]
         initialHiddenGroup = [grass, hotAirBaloon, callToAction] + skillGroup1 + skillGroup2
 
         for item in initialHiddenGroup {

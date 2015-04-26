@@ -21,6 +21,7 @@
 		78CFAC431AEBF87B000CDDAD /* Chapter1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */; };
 		78CFAC451AEC25E6000CDDAD /* Chapter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */; };
 		78D68F961AE9F26300F5CDDB /* ChapterTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */; };
+		B4596A4DEC4FE5FA74775236 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 121560E7589ED379412015E7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		121560E7589ED379412015E7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		783388781AE9E49F0096720D /* AleemDhanji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AleemDhanji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7833887C1AE9E49F0096720D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7833887D1AE9E49F0096720D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,9 +51,12 @@
 		78BFC4611AEC337E00ADEFF5 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
 		78BFC4671AEC62C000ADEFF5 /* Chapter4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter4ViewController.swift; sourceTree = "<group>"; };
 		78BFC4691AEC81AD00ADEFF5 /* Chapter5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter5ViewController.swift; sourceTree = "<group>"; };
+		78BFC46B1AED7D6500ADEFF5 /* AleemDhanji-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AleemDhanji-Bridging-Header.h"; sourceTree = "<group>"; };
 		78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter1ViewController.swift; sourceTree = "<group>"; };
 		78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter2ViewController.swift; sourceTree = "<group>"; };
 		78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleViewController.swift; sourceTree = "<group>"; };
+		AA9146586DC674716BCC0E5F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CD3D0DC606F758A79FECE0B0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4596A4DEC4FE5FA74775236 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +78,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		197205F024393C77E7E829D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0DC606F758A79FECE0B0 /* Pods.debug.xcconfig */,
+				AA9146586DC674716BCC0E5F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5AA0206EEA8D8FBEE373F136 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				121560E7589ED379412015E7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7833886F1AE9E49F0096720D = {
 			isa = PBXGroup;
 			children = (
 				7833887A1AE9E49F0096720D /* AleemDhanji */,
 				783388901AE9E49F0096720D /* AleemDhanjiTests */,
 				783388791AE9E49F0096720D /* Products */,
+				197205F024393C77E7E829D5 /* Pods */,
+				5AA0206EEA8D8FBEE373F136 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +127,7 @@
 				783388861AE9E49F0096720D /* LaunchScreen.xib */,
 				78BFC4601AEC314300ADEFF5 /* Crystal Ball App */,
 				7833887B1AE9E49F0096720D /* Supporting Files */,
+				78BFC46B1AED7D6500ADEFF5 /* AleemDhanji-Bridging-Header.h */,
 			);
 			path = AleemDhanji;
 			sourceTree = "<group>";
@@ -159,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 783388971AE9E49F0096720D /* Build configuration list for PBXNativeTarget "AleemDhanji" */;
 			buildPhases = (
+				9A184B60F9058BBAC4600EFD /* Check Pods Manifest.lock */,
 				783388741AE9E49F0096720D /* Sources */,
 				783388751AE9E49F0096720D /* Frameworks */,
 				783388761AE9E49F0096720D /* Resources */,
+				707094315B4E1F7CDC5CD1EF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +276,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		707094315B4E1F7CDC5CD1EF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A184B60F9058BBAC4600EFD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		783388741AE9E49F0096720D /* Sources */ = {
@@ -389,23 +450,27 @@
 		};
 		783388981AE9E49F0096720D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD3D0DC606F758A79FECE0B0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AleemDhanji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AleemDhanji/AleemDhanji-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		783388991AE9E49F0096720D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA9146586DC674716BCC0E5F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AleemDhanji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AleemDhanji/AleemDhanji-Bridging-Header.h";
 			};
 			name = Release;
 		};
