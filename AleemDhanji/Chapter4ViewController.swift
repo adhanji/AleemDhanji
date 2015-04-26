@@ -12,14 +12,39 @@ class Chapter4ViewController: UIViewController {
 
     // MARK: - IBOutlets
 
-//    @IBOutlet weak var heart: UIImageView!
-//    @IBOutlet weak var callToAction: UIImageView!
-//    @IBOutlet weak var ring: UIImageView!
+    @IBOutlet weak var heartInside: UIImageView!
+    @IBOutlet weak var heart: UIImageView!
+    @IBOutlet weak var callToAction: UIImageView!
+    @IBOutlet weak var ring: UIImageView!
+
+    // MARK: - Variables
+
+    var initialHiddenGroup: [UIView] = []
+    var numberOfTaps = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        heart.image = heart.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+//        let tap = UITapGestureRecognizer(target: self, action: "fillPage")
+//        tap.numberOfTapsRequired = 1
+//        tap.numberOfTouchesRequired = 1
+//        heart.addGestureRecognizer(tap)
+//        heartInside.addGestureRecognizer(tap)
+
+        initialHiddenGroup = [heartInside, heart, callToAction, ring]
+
+        for item in initialHiddenGroup {
+            item.alpha = 0
+        }
+
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.75, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            for item in self.initialHiddenGroup {
+                item.alpha = 1
+            }
+        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,15 +52,10 @@ class Chapter4ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Tap Gesture
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func fillPage() {
+        println("hi")
     }
-    */
 
 }

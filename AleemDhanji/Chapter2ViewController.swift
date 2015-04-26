@@ -38,7 +38,7 @@ class Chapter2ViewController: UIViewController {
         hotAirBaloon.addGestureRecognizer(swipeUp)
 
         skillGroup1 = [html, css, javascript]
-        skillGroup2 = [python, cPlusPlus]
+        skillGroup2 = [python, cPlusPlus, objectiveC]
         initialHiddenGroup = [grass, hotAirBaloon, callToAction] + skillGroup1 + skillGroup2
 
         for item in initialHiddenGroup {
