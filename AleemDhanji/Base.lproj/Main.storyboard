@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="av7-0m-xAZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="VeM-of-quo">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -262,24 +262,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slider" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-Yv-7QP">
-                                <rect key="frame" x="146" y="494" width="729" height="126"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slide-button" translatesAutoresizingMaskIntoConstraints="NO" id="MwC-6j-LWa">
-                                <rect key="frame" x="156" y="503" width="108" height="108"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="destination-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="02O-Yj-MxC">
-                                <rect key="frame" x="756" y="503" width="108" height="108"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shines" translatesAutoresizingMaskIntoConstraints="NO" id="OTO-r2-twk">
                                 <rect key="frame" x="468" y="262" width="529" height="358"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;/&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xb-YB-36Y">
-                                <rect key="frame" x="759" y="475" width="114" height="89"/>
+                                <rect key="frame" x="752" y="485" width="114" height="89"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="65"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slider" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-Yv-7QP">
+                                <rect key="frame" x="146" y="494" width="729" height="126"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="destination-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="02O-Yj-MxC">
+                                <rect key="frame" x="756" y="503" width="108" height="108"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="K9G-aN-n6G">
+                                <rect key="frame" x="158" y="503" width="705" height="31"/>
+                                <connections>
+                                    <action selector="didReachDestination" destination="VeM-of-quo" eventType="valueChanged" id="QqL-yb-XDD"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -291,8 +294,8 @@
                         <outlet property="destinationPlaceholder" destination="02O-Yj-MxC" id="6T4-dE-PNM"/>
                         <outlet property="laptop" destination="d9L-ia-tU9" id="bRM-tK-8yN"/>
                         <outlet property="shines" destination="OTO-r2-twk" id="JXJ-cs-Gzb"/>
-                        <outlet property="slideButton" destination="MwC-6j-LWa" id="2d5-hX-TEv"/>
-                        <outlet property="slider" destination="OgI-Yv-7QP" id="mVe-MP-dp7"/>
+                        <outlet property="slider" destination="K9G-aN-n6G" id="ICD-5m-wNu"/>
+                        <outlet property="sliderTrack" destination="OgI-Yv-7QP" id="5AR-nh-mAQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEZ-5d-qKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -704,7 +707,6 @@
         <image name="outline_ch1" width="396" height="603"/>
         <image name="ring" width="113" height="113"/>
         <image name="shines" width="529" height="358"/>
-        <image name="slide-button" width="108" height="108"/>
         <image name="slider" width="729" height="126"/>
         <image name="stars" width="1024" height="713"/>
         <image name="tap_icon" width="50" height="65"/>
