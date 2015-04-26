@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="0L4-sT-39C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="EC2-kj-5S3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -43,8 +43,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Javascript?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf6-Yj-ake">
-                                <rect key="frame" x="260" y="375" width="287" height="82"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="60"/>
+                                <rect key="frame" x="260" y="375" width="311" height="89"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -95,8 +95,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Break it down." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIE-VU-GOd">
-                                <rect key="frame" x="260" y="375" width="372" height="82"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="60"/>
+                                <rect key="frame" x="260" y="375" width="403" height="89"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -145,8 +145,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My First iOS App." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5A-FE-w1Y">
-                                <rect key="frame" x="260" y="375" width="462" height="82"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="60"/>
+                                <rect key="frame" x="260" y="375" width="500" height="89"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -163,10 +163,10 @@
                                 <rect key="frame" x="367" y="270" width="658" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-left" translatesAutoresizingMaskIntoConstraints="NO" id="y3p-4e-ruU">
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-left" translatesAutoresizingMaskIntoConstraints="NO" id="y3p-4e-ruU">
                                 <rect key="frame" x="103" y="141" width="111" height="94"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-right" translatesAutoresizingMaskIntoConstraints="NO" id="sky-WL-wi2">
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-right" translatesAutoresizingMaskIntoConstraints="NO" id="sky-WL-wi2">
                                 <rect key="frame" x="756" y="507" width="111" height="94"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucH-RI-Tpr" userLabel="line">
@@ -195,8 +195,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Be passionate." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1M-sl-h67">
-                                <rect key="frame" x="260" y="375" width="384" height="82"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="60"/>
+                                <rect key="frame" x="260" y="375" width="416" height="89"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -213,10 +213,10 @@
                                 <rect key="frame" x="367" y="270" width="658" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-left" translatesAutoresizingMaskIntoConstraints="NO" id="t7e-Hm-q5O">
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-left" translatesAutoresizingMaskIntoConstraints="NO" id="t7e-Hm-q5O">
                                 <rect key="frame" x="103" y="141" width="111" height="94"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-right" translatesAutoresizingMaskIntoConstraints="NO" id="Rtx-E6-wzW">
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-right" translatesAutoresizingMaskIntoConstraints="NO" id="Rtx-E6-wzW">
                                 <rect key="frame" x="756" y="507" width="111" height="94"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8w-0X-iXE" userLabel="line">
@@ -549,7 +549,7 @@
         <!--Chapter 4 Main View Controller-->
         <scene sceneID="x7a-vS-ElD">
             <objects>
-                <viewController storyboardIdentifier="Chapter4Main" id="0L4-sT-39C" userLabel="Chapter 4 Main View Controller" customClass="Chapter4ViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Chapter4Main" id="0L4-sT-39C" userLabel="Chapter 4 Main View Controller" customClass="ChapterTitleViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lg7-GL-vXF"/>
                         <viewControllerLayoutGuide type="bottom" id="DDT-IC-6RO"/>
@@ -579,28 +579,119 @@
                         <color key="backgroundColor" red="1" green="0.45098039220000002" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="callToAction" destination="gXc-ZS-rJ4" id="YBa-l0-RQO"/>
-                        <outlet property="heart" destination="vn9-Ko-IwK" id="VXu-iK-4B9"/>
-                        <outlet property="ring" destination="umm-Ie-ADx" id="wah-5X-GHu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZ8-nA-AlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="11790" y="752"/>
         </scene>
+        <!--Chapter 5 Title View Controller-->
+        <scene sceneID="7Lu-2C-l3d">
+            <objects>
+                <viewController storyboardIdentifier="Chapter5Title" id="HpF-yI-FTu" userLabel="Chapter 5 Title View Controller" customClass="ChapterTitleViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RaP-Da-lFR"/>
+                        <viewControllerLayoutGuide type="bottom" id="RxT-Xw-r0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x9X-Lw-2wQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="ooA-Oa-wXG">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So what's next?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYk-En-gOd">
+                                <rect key="frame" x="260" y="375" width="441" height="89"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="65"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ring" translatesAutoresizingMaskIntoConstraints="NO" id="4CJ-3C-Mp0">
+                                <rect key="frame" x="260" y="217" width="108" height="108"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkv-hk-Skc">
+                                <rect key="frame" x="297" y="230" width="35" height="82"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-left" translatesAutoresizingMaskIntoConstraints="NO" id="4FU-3s-mMW">
+                                <rect key="frame" x="103" y="141" width="111" height="94"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fa-quote-right" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-2y-pdq">
+                                <rect key="frame" x="756" y="507" width="111" height="94"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6VY-vM-gGh" userLabel="line">
+                                <rect key="frame" x="0.0" y="270" width="260" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dashed-line" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-CM-F61">
+                                <rect key="frame" x="370" y="270" width="652" height="3"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xZT-qg-6WP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12986" y="752"/>
+        </scene>
+        <!--Chapter 5 Main View Controller-->
+        <scene sceneID="Si4-Wd-d6Z">
+            <objects>
+                <viewController storyboardIdentifier="Chapter5Main" id="EC2-kj-5S3" userLabel="Chapter 5 Main View Controller" customClass="ChapterTitleViewController" customModule="AleemDhanji" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kXt-Ns-qY0"/>
+                        <viewControllerLayoutGuide type="bottom" id="PA6-6W-DyF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3np-hu-Vv5">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="WSf-fB-1X6">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stars" translatesAutoresizingMaskIntoConstraints="NO" id="hjN-3n-dct">
+                                <rect key="frame" x="0.0" y="45" width="1024" height="713"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buildings_ch5" translatesAutoresizingMaskIntoConstraints="NO" id="Rh3-cR-np2">
+                                <rect key="frame" x="0.0" y="418" width="440" height="350"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hot-air-balloon_ch5" translatesAutoresizingMaskIntoConstraints="NO" id="Mbp-ap-TkG">
+                                <rect key="frame" x="615" y="400" width="125" height="203"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-G4-Ztl">
+                                <rect key="frame" x="150" y="28" width="602" height="235"/>
+                                <string key="text">This blurb will recap Aleem’s learning from his experiences up to so far. Key point here is that although he may not know what projects he will be working on next, he will be definitely enjoying the process.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dM-M5-B5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14096" y="752"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CB00001" width="320" height="568"/>
         <image name="buildings_ch1" width="405" height="597"/>
+        <image name="buildings_ch5" width="440" height="350"/>
+        <image name="dashed-line" width="652" height="3"/>
         <image name="dashed-ring" width="111" height="110"/>
         <image name="destination-placeholder" width="108" height="108"/>
         <image name="expand-CTA" width="64" height="90"/>
         <image name="fa-quote-left" width="111" height="94"/>
         <image name="fa-quote-right" width="111" height="94"/>
+        <image name="gradient" width="1024" height="768"/>
         <image name="grass" width="280" height="15"/>
         <image name="heart" width="292" height="251"/>
         <image name="hot-air-balloon" width="226" height="349"/>
+        <image name="hot-air-balloon_ch5" width="125" height="203"/>
         <image name="iPhone-5-White" width="217" height="454"/>
         <image name="laptop-dark-grey" width="536" height="372"/>
         <image name="outline_ch1" width="396" height="603"/>
@@ -608,6 +699,7 @@
         <image name="shines" width="529" height="358"/>
         <image name="slide-button" width="108" height="108"/>
         <image name="slider" width="729" height="126"/>
+        <image name="stars" width="1024" height="713"/>
         <image name="tap_icon" width="50" height="65"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
