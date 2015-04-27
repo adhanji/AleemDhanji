@@ -19,6 +19,7 @@
 		78BFC46A1AEC81AD00ADEFF5 /* Chapter5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC4691AEC81AD00ADEFF5 /* Chapter5ViewController.swift */; };
 		78BFC46F1AED818300ADEFF5 /* MainTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC46E1AED818300ADEFF5 /* MainTitleViewController.swift */; };
 		78BFC4711AEDA21600ADEFF5 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC4701AEDA21600ADEFF5 /* SummaryViewController.swift */; };
+		78BFC4731AEDADF000ADEFF5 /* Chapter2SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC4721AEDADF000ADEFF5 /* Chapter2SecondViewController.swift */; };
 		78CFAC431AEBF87B000CDDAD /* Chapter1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */; };
 		78CFAC451AEC25E6000CDDAD /* Chapter2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */; };
 		78D68F961AE9F26300F5CDDB /* ChapterTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */; };
@@ -54,6 +55,7 @@
 		78BFC46B1AED7D6500ADEFF5 /* AleemDhanji-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AleemDhanji-Bridging-Header.h"; sourceTree = "<group>"; };
 		78BFC46E1AED818300ADEFF5 /* MainTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTitleViewController.swift; sourceTree = "<group>"; };
 		78BFC4701AEDA21600ADEFF5 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		78BFC4721AEDADF000ADEFF5 /* Chapter2SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter2SecondViewController.swift; sourceTree = "<group>"; };
 		78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter1ViewController.swift; sourceTree = "<group>"; };
 		78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter2ViewController.swift; sourceTree = "<group>"; };
 		78D68F951AE9F26300F5CDDB /* ChapterTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTitleViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				78BFC46E1AED818300ADEFF5 /* MainTitleViewController.swift */,
 				78CFAC421AEBF87B000CDDAD /* Chapter1ViewController.swift */,
 				78CFAC441AEC25E6000CDDAD /* Chapter2ViewController.swift */,
+				78BFC4721AEDADF000ADEFF5 /* Chapter2SecondViewController.swift */,
 				78BFC45C1AEC2E2000ADEFF5 /* Chapter3ViewController.swift */,
 				78BFC4671AEC62C000ADEFF5 /* Chapter4ViewController.swift */,
 				78BFC4691AEC81AD00ADEFF5 /* Chapter5ViewController.swift */,
@@ -320,6 +323,7 @@
 			files = (
 				78BFC45D1AEC2E2000ADEFF5 /* Chapter3ViewController.swift in Sources */,
 				78BFC4681AEC62C000ADEFF5 /* Chapter4ViewController.swift in Sources */,
+				78BFC4731AEDADF000ADEFF5 /* Chapter2SecondViewController.swift in Sources */,
 				78CFAC431AEBF87B000CDDAD /* Chapter1ViewController.swift in Sources */,
 				78CFAC451AEC25E6000CDDAD /* Chapter2ViewController.swift in Sources */,
 				78BFC4711AEDA21600ADEFF5 /* SummaryViewController.swift in Sources */,

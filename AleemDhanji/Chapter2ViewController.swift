@@ -12,6 +12,9 @@ class Chapter2ViewController: UIViewController {
 
     // MARK: - IBOutlets
 
+    @IBOutlet weak var continueLabel: UILabel!
+    @IBOutlet weak var shimmeringView: FBShimmeringView!
+
     @IBOutlet weak var grass: UIImageView!
     @IBOutlet weak var hotAirBaloon: UIImageView!
     @IBOutlet weak var callToAction: UIImageView!
@@ -39,7 +42,7 @@ class Chapter2ViewController: UIViewController {
 
         skillGroup1 = [html, css, javascript]
         skillGroup2 = [python, cPlusPlus, objectiveC]
-        initialHiddenGroup = [grass, hotAirBaloon, callToAction] + skillGroup1 + skillGroup2
+        initialHiddenGroup = [grass, hotAirBaloon, callToAction, continueLabel] + skillGroup1 + skillGroup2
 
         for item in initialHiddenGroup {
             item.alpha = 0
@@ -63,6 +66,9 @@ class Chapter2ViewController: UIViewController {
     // MARK: - Swipe Gesture
 
     func liftBaloon() {
+        if swipes == 2 {
+            continueLabel.alpha = 1
+        }
         if swipes < 2 {
             // Move hot air baloon and call to action up the screen
             UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
@@ -77,12 +83,6 @@ class Chapter2ViewController: UIViewController {
                     item.alpha = 1
                 }
             }, completion: nil)
-            // Hide skill sets after set delay
-//            UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-//                for item in self.swipes == 0 ? self.skillGroup1 : self.skillGroup2 {
-//                    item.alpha = 0
-//                }
-//            }, completion: nil)
             ++self.swipes
         }
 

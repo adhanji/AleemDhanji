@@ -14,8 +14,8 @@ class Chapter4ViewController: UIViewController {
 
     @IBOutlet weak var heartInside: UIImageView!
     @IBOutlet weak var heart: UIImageView!
-    @IBOutlet weak var callToAction: UIImageView!
-    @IBOutlet weak var ring: UIImageView!
+    @IBOutlet weak var continueLabel: UILabel!
+    @IBOutlet weak var shimmeringView: FBShimmeringView!
 
     // MARK: - Variables
 
@@ -25,13 +25,7 @@ class Chapter4ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let tap = UITapGestureRecognizer(target: self, action: "fillPage")
-//        tap.numberOfTapsRequired = 1
-//        tap.numberOfTouchesRequired = 1
-//        heart.addGestureRecognizer(tap)
-//        heartInside.addGestureRecognizer(tap)
-
-        initialHiddenGroup = [heartInside, heart, callToAction, ring]
+        initialHiddenGroup = [heartInside, heart, continueLabel]
 
         for item in initialHiddenGroup {
             item.alpha = 0
@@ -45,17 +39,17 @@ class Chapter4ViewController: UIViewController {
                 item.alpha = 1
             }
         }, completion: nil)
+        UIView.animateWithDuration(1, delay: 3, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.shimmeringView.contentView = self.continueLabel
+            self.shimmeringView.shimmering = true
+            self.continueLabel.alpha = 1
+        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    // MARK: - Tap Gesture
 
-    func fillPage() {
-        println("hi")
-    }
 
 }
